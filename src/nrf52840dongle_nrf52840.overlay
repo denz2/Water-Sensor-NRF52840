@@ -7,6 +7,12 @@
     status = "okay";
     hw-flow-control;
 };
+
+/* eventually disable the first one as it uses power and also in proj put for console to n
+&uart0 {
+    status = "disabled";
+};
+*/
 &gpiote {
     status = "okay";
 };
