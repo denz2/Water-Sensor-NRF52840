@@ -18,6 +18,8 @@ You can change the descriminator with CONFIG_CHIP_DEVICE_DISCRIMINATOR in prj.co
 
 The SPAKE2+ verifier can be generated with the SPAKE2+ Python Tool using the passcode, SPAKE2+ salt, and iteration count. The simplest is to use the default SPAKE2+ salt (U1BBS0UyUCBLZXkgU2FsdA==) and iteration count (1000). Here is an example where I use the default salt and iteration count but a different passcode:
 
+./spake2p.py gen-verifier -p 20372039 -s U1BBS0UyUCBLZXkgU2FsdA== -i 1000
+
 CONFIG_CHIP_DEVICE_DISCRIMINATOR=0x231
 CONFIG_CHIP_DEVICE_SPAKE2_PASSCODE=20372039
 CONFIG_CHIP_FACTORY_DATA_GENERATE_SPAKE2_VERIFIER=n
